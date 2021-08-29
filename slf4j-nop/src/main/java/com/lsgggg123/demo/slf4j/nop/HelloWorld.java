@@ -1,4 +1,4 @@
-package com.lsgggg123.demo.slf4j.simple;
+package com.lsgggg123.demo.slf4j.nop;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
