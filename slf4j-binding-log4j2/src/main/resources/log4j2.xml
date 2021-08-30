@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d %highlight{%-5p} [%t] %style{%logger}{bright,cyan} - %m%n%throwable" charset="UTF-8"/>
+        </Console>
+        
+        <RollingFile name="FILE-APPENDER" fileName="logs/app.log" filePattern="logs/app.log.%d{yyyy-MM-dd}" append="true">
+            <PatternLayout pattern="%d %-5p [%t] %c - %m%n%throwable" charset="UTF-8"/>
+            <TimeBasedTriggeringPolicy/>
+            <DefaultRolloverStrategy/>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <AsyncRoot level="INFO">
+            <AppenderRef ref="FILE-APPENDER"/>
+            <AppenderRef ref="STDOUT"/>
+        </AsyncRoot>
+    </Loggers>
+</Configuration>
