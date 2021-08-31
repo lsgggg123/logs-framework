@@ -5,7 +5,7 @@
             <PatternLayout pattern="%d %highlight{%-5p} [%t] %style{%logger}{bright,cyan} - %m%n%throwable" charset="UTF-8"/>
         </Console>
         
-        <RollingFile name="FILE-APPENDER" fileName="logs/app.log" filePattern="logs/app.log.%d{yyyy-MM-dd}" append="true">
+        <RollingFile name="FILE-APPENDER" fileName="logs/log4j2.log" filePattern="logs/log4j2.log.%d{yyyy-MM-dd}" append="true">
             <PatternLayout pattern="%d %-5p [%t] %c - %m%n%throwable" charset="UTF-8"/>
             <TimeBasedTriggeringPolicy/>
             <DefaultRolloverStrategy/>
