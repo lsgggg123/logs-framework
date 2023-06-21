@@ -16,10 +16,15 @@
         <module>slf4j-simple</module>
         <module>slf4j-binding-jul</module>
         <module>slf4j-binding-log4j2</module>
+        <module>slf4j-binding-log4j</module>
+        <module>slf4j-binding-logback</module>
+        <module>slf4j-utils</module>
     </modules>
 
     <properties>
         <java.version>1.8</java.version>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <slf4j.version>1.7.32</slf4j.version>
         <log4j2.version>2.14.1</log4j2.version>
@@ -28,6 +33,13 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- self project -->
+            <dependency>
+                <groupId>com.lsgggg123.demo</groupId>
+                <artifactId>slf4j-utils</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
