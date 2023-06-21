@@ -7,5 +7,6 @@ public class Slf4jSimple {
     public static void main(String[] args) {
         Logger logger = LoggerFactory.getLogger(Slf4jSimple.class);
         logger.info("slf4j simple");
+        logger.debug("slf4j simple debug");
     }
 }
