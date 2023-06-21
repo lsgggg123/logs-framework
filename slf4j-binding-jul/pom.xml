@@ -12,14 +12,12 @@
     <artifactId>slf4j-binding-jul</artifactId>
 
     <dependencies>
-        <dependency>
-            <groupId>com.lsgggg123.demo</groupId>
-            <artifactId>slf4j-utils</artifactId>
-        </dependency>
+        <!-- slf4j -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-jdk14</artifactId>
