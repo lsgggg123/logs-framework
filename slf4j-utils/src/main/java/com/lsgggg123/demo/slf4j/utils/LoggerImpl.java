@@ -3,7 +3,7 @@ package com.lsgggg123.demo.slf4j.utils;
 public enum LoggerImpl {
     JUL("org.slf4j.impl.JDK14LoggerFactory"),
 
-    LOG4j("org.slf4j.imp.Log4jLoggerFactory"),
+    LOG4j("org.slf4j.impl.Log4jLoggerFactory"),
 
     LOG4J2("org.apache.logging.slf4j.Log4jLoggerFactory"),
 

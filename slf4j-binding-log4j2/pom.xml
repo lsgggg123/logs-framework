@@ -12,6 +12,12 @@
     <artifactId>slf4j-binding-log4j2</artifactId>
 
     <dependencies>
+        <!-- self project -->
+        <dependency>
+            <groupId>com.lsgggg123.demo</groupId>
+            <artifactId>slf4j-utils</artifactId>
+        </dependency>
+
         <!-- slf4j -->
         <dependency>
             <groupId>org.slf4j</groupId>
