@@ -15,8 +15,6 @@ public class Slf4jBindingLog4j2 {
     
     public static void main(String[] args) {
         ScheduledExecutorService scheduledExecutorService = Executors.newScheduledThreadPool(1);
-        scheduledExecutorService.scheduleAtFixedRate(() -> {
-            LOGGER.info("scheduler invoked at fix rate");
-        }, 1L, 3, TimeUnit.SECONDS);
+        scheduledExecutorService.scheduleAtFixedRate(() -> LOGGER.info("scheduler invoked at fix rate"), 1L, 3, TimeUnit.SECONDS);
     }
 }
