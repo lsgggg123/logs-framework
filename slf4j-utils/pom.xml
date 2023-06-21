@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>slf4j-utils</artifactId>
-    
+
     <dependencies>
         <dependency>
             <groupId>org.slf4j</groupId>
