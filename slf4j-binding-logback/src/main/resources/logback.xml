@@ -1,0 +1,23 @@
+<configuration>
+
+    <!-- add spring-boot dependency, and see 'base.xml' to learn logback config from spring -->
+    <!--
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot</artifactId>
+    </dependency>
+    -->
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-mm-dd HH:mm:ss.SSS} [%thread] %highlight(%-5level) %cyan(%logger) - %msg %n</pattern>
+        </encoder>
+    </appender>
+    <appender name="STDOUT_ASYNC" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="STDOUT" />
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT_ASYNC"/>
+    </root>
+</configuration>
