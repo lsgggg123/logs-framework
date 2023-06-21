@@ -13,8 +13,17 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.lsgggg123.demo</groupId>
+            <artifactId>slf4j-utils</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-nop</artifactId>
         </dependency>
     </dependencies>
 
